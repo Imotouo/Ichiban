@@ -1,0 +1,168 @@
+body{
+    background-image: url(yuruCampBG.png);
+    text-align: center;
+}
+#titleImg{
+    width: 75%;
+}
+#title{
+    border-radius: 50px;
+    margin-left: 15%;
+    width: 70%;
+    /* background-color: rgb(245, 230, 201); */
+    background-image: url(bg.png);
+    background-size: contain;
+    font-size: 100px;
+    /* color: tomato; */
+    color: rgb(250, 243, 243);
+}
+#header{
+    color: rgb(255, 255, 255);
+    font-size: 100px;
+}
+#card{
+    margin-left: 35px;
+    margin-right: 35px;
+    margin-top: 30px;
+    width: 600px;
+    height: 800px;
+    border-radius: 20px;
+    background-color: white;
+    text-align: center;
+}
+#card img{
+    margin: 10px;
+    height: 85%;
+    display: inline;
+}
+#card2{
+    margin-left: 35px;
+    margin-right: 35px;
+    margin-top: 30px;
+    width: 1270px;
+    height: 1050px;
+    border-radius: 20px;
+    background-color: white;
+    text-align: center;
+}
+#card2 img{
+    margin: 10px;
+    width: 80%;
+    display: inline;
+}
+#card3{
+    margin-left: 35px;
+    margin-right: 35px;
+    margin-top: 30px;
+    width: 1270px;
+    height: 1700px;
+    border-radius: 20px;
+    background-color: white;
+    text-align: center;
+}
+#card3 img{
+    margin: 10px;
+    width: 80%;
+    display: inline;
+}
+#card4{
+    margin-left: 35px;
+    margin-right: 35px;
+    margin-top: 30px;
+    width: 1270px;
+    height: 1450px;
+    border-radius: 20px;
+    background-color: white;
+    text-align: center;
+}
+#card4 img{
+    margin: 10px;
+    width: 80%;
+    display: inline;
+}
+#card5{
+    margin-left: 35px;
+    margin-right: 35px;
+    margin-top: 30px;
+    width: 1270px;
+    height: 1150px;
+    border-radius: 20px;
+    background-color: white;
+    text-align: center;
+}
+#card5 img{
+    margin: 10px;
+    width: 80%;
+    display: inline;
+}
+#des{
+    font-size: 24px;
+}
+#btn_start{
+    position: fixed;
+    bottom: 0px;
+    left: 0.5%;
+    width: 300px;
+}
+#btn_start:hover{
+    opacity: 0.7;
+    scale: 1.05;
+    transition: opacity  0.8s;
+    transition: scale  1s;
+}
+#fragment{
+    position: fixed;
+    display: none;
+    border-radius: 50px;
+    top: 10%;
+    left: 15%;
+    width: 70%;
+    height: 80%;
+    background-color: rgb(247, 233, 204);
+}
+#btn_cancle{
+    float: right;
+    margin-top: 8px;
+    margin-right: 8px;
+    border-radius: 90px;
+    width: 50px;
+    height: 50px;
+}
+#btn_cancle:hover{
+    opacity: 0.7;
+    background-color: red;
+    transition: opacity background-color 0.5s;
+}
+#btn_lottery{
+    position: fixed;
+    float: left;
+    border-radius: 15px;
+    font-size: 48px;
+    font-family: bold;
+    margin-top: 36%;
+    margin-left: -24px;
+}
+#btn_lottery:hover{
+    background-color: powderblue;
+}
+#loading{
+    display: none;
+    position: absolute;
+    left: 50%;
+    top: 300px;
+    transform: translate(-50%,-50%);
+    /* width: 55%; */
+    height: 70%;
+    float: right;
+}
+#reward{
+    position: absolute;
+    left: 50%;
+    top: 82.5%;
+    transform: translate(-50%,-50%);
+    font-size: 55px;
+}
+#card:hover,#card2:hover,#card3:hover,#card4:hover,#card5:hover{
+    scale: 1.025;
+    transition: scale 0.5s;
+}
