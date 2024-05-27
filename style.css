@@ -106,9 +106,17 @@ body{
 }
 #btn_start:hover{
     opacity: 0.7;
-    scale: 1.05;
-    transition: opacity  0.8s;
-    transition: scale  1s;
+    transition: opacity 0.5s;
+}
+#btn_game{
+    position: fixed;
+    bottom: 0px;
+    right: 0.5%;
+    width: 250px;
+}
+#btn_game:hover{
+    opacity: 0.7;
+    transition: opacity 0.5s;
 }
 #fragment{
     position: fixed;
@@ -118,7 +126,20 @@ body{
     left: 15%;
     width: 70%;
     height: 80%;
-    background-color: rgb(247, 233, 204);
+    background-color: rgb(243, 226, 193);
+}
+#fragmentGame{
+    position: fixed;
+    display: none;
+    border-radius: 50px;
+    top: 10%;
+    left: 15%;
+    width: 70%;
+    height: 80%;
+    background-color: rgb(243, 226, 193);
+    user-select:none; /* standard syntax */
+    -webkit-user-select:none; /* for Chrome、Safari */
+    -moz-user-select:none; /* for Mozilla、Firefox */
 }
 #btn_cancle{
     float: right;
@@ -128,7 +149,20 @@ body{
     width: 50px;
     height: 50px;
 }
+#btn_cancleG{
+    float: right;
+    margin-top: 8px;
+    margin-right: 8px;
+    border-radius: 90px;
+    width: 50px;
+    height: 50px;
+}
 #btn_cancle:hover{
+    opacity: 0.7;
+    background-color: red;
+    transition: opacity background-color 0.5s;
+}
+#btn_cancleG:hover{
     opacity: 0.7;
     background-color: red;
     transition: opacity background-color 0.5s;
@@ -143,6 +177,18 @@ body{
     margin-left: -24px;
 }
 #btn_lottery:hover{
+    background-color: powderblue;
+}
+#btn_gameStart{
+    position: fixed;
+    float: left;
+    border-radius: 15px;
+    font-size: 48px;
+    font-family: bold;
+    margin-top: 36%;
+    margin-left: -85px;
+}
+#btn_gameStart:hover{
     background-color: powderblue;
 }
 #loading{
@@ -162,7 +208,58 @@ body{
     transform: translate(-50%,-50%);
     font-size: 55px;
 }
-#card:hover,#card2:hover,#card3:hover,#card4:hover,#card5:hover{
-    scale: 1.025;
-    transition: scale 0.5s;
+#ball{
+    display: none;
+    position: absolute;
+    top: 50%;
+    width: 100px;
+    animation: move 1s linear infinite;
 }
+@keyframes move{
+    0%{
+      transform: rotate(0deg);
+    }
+    100%{
+      transform: rotate(360deg);
+    }
+}
+#comboBar{
+    position: absolute;
+    left: 5%;
+    top: 90%;
+    width: 150px;
+    height: 30px;
+}
+#comboText{
+    position: absolute;
+    font-size: 26px;
+    left: 4%;
+    top: 85%;
+    width: 150px;
+    height: 30px;
+}
+#comboView{
+    display: none;
+}
+#score{
+    display: none;
+    top: 10px;
+    left: 50%;
+    position: absolute;
+    font-size: 40px;
+}
+#timeView{
+    display: none;
+    top: 5%;
+    left: 90%;
+    position: absolute;
+    font-size: 40px;
+}
+#lastScore{
+    position: absolute;
+    display: none;
+    left: 45%;
+    top: 45%;
+    font-size: 50px;
+}
+  

@@ -4,6 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <script
+        src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+        crossorigin="anonymous"></script>
     <link rel="icon" href="logo.png" type="image/x-icon">
     <title>搖曳露營Δ 一番賞</title>
 </head>
@@ -36,10 +40,6 @@
                     <td colspan="2"><div id="card2"><img src="OneG.png" alt=""><p id="des">G 賞 迷你色紙（全 8 種可選，約 13.5cm）</p></div></td>
                 </tr>
             </table>
-            <hr>
-            <div id="info">
-                <p style="font-size: 28px;color: white;">網際網路實務網頁作業     聯絡地址:zx415523@gmail.com</br></br>此為搖曳露營一番賞抽獎模擬網站</p>
-            </div>
         </center>
     </div>
     <div id="fragment">
@@ -48,7 +48,20 @@
         <div id="reward"></div>
         <input type="button" id="btn_lottery" value="抽獎">
     </div>
+    <div id="fragmentGame">
+        <img src="cancle.png" alt="" id="btn_cancleG">
+        <img src="rinBall.png" id="ball" alt="">
+        <input type="button" id="btn_gameStart" value="開始遊戲">
+        <div id="comboView">
+            <div id="comboText">COMBO 0</div>
+            <progress id="comboBar" max="100" value="100"></progress>
+        </div>
+        <div id="timeView">20</div>
+        <div id="score">0</div>
+        <div id="lastScore">0</div>
+    </div>
     <img src="btncard.png" id="btn_start" alt="">
+    <img src="naIcon.png" id="btn_game" alt="">
     <script src="script.js"></script>
 </body>
 </html>
